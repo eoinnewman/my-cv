@@ -1,0 +1,23 @@
+<p-panel>
+    <ng-template pTemplate="header">
+        <div class="flex align-items-center gap-2">
+            <p-avatar 
+                image="https://cdn.iconscout.com/icon/free/png-256/free-robot-icon-download-in-svg-png-gif-file-formats--bot-customer-help-support-automatic-pack-people-icons-415007.png" 
+                size="large" 
+                shape="circle" />   
+        </div>
+    </ng-template>
+    <ul class="chatbox">
+        <li class="chat-incoming chat">
+            <p>Hey! How can I assist you today?</p>
+        </li>
+    </ul>
+    <hr>
+    <br>
+    <p-inputGroup>
+        <textarea rows="1" cols="30"
+        pInputTextarea  placeholder="Enter a message..."></textarea>
+        <button type="button" pButton icon="pi pi-send" class="p-button-info"></button>
+    </p-inputGroup>
+    <br>
+</p-panel>
