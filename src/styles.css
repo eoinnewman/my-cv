@@ -1,8 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
-@import "primeng/resources/themes/rhea/theme.css";
+@import "primeng/resources/themes/viva-dark/theme.css";
 @import "primeng/resources/primeng.css";
 
-.body{
-    background-color: gainsboro;
+@font-face {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+}
+
+body,
+body .p-component
+{
+  font-family: "VT323", monospace;
+  src: url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+  color: #99ff99;
+  background-color: #000000;
+}
+
+.p-panel .p-panel-header .p-panel-title {
+  font-weight: 600;
+  color: #99ff99;
 }

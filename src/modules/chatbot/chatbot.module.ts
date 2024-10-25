@@ -10,6 +10,7 @@ import { CardModule } from 'primeng/card';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { AvatarModule } from 'primeng/avatar';
+import { TerminalModule, TerminalService } from 'primeng/terminal';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,10 @@ import { AvatarModule } from 'primeng/avatar';
     CardModule,
     InputGroupAddonModule,
     InputGroupModule,
-    AvatarModule
+    AvatarModule,
+    TerminalModule
   ],
+  providers: [TerminalService],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class ChatbotModule { }
